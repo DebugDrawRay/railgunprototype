@@ -1,0 +1,260 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Camera",
+				"Camera.main	[property]"
+			],
+			[
+				"Scree",
+				"Screen.height	[property]"
+			],
+			[
+				"Ve",
+				"Vector3	[class]"
+			],
+			[
+				"resetVel",
+				"resetVelocityMultiplier"
+			],
+			[
+				"Scre",
+				"Screen.height	[property]"
+			],
+			[
+				"Vect",
+				"Vector3	[class]"
+			],
+			[
+				"VEctor",
+				"Vector3	[class]"
+			],
+			[
+				"Camer",
+				"Camera.main	[property]"
+			],
+			[
+				"Screen",
+				"Screen.width	[property]"
+			],
+			[
+				"De",
+				"Debug	[class]"
+			],
+			[
+				"rigi",
+				"rigidbody	[class]"
+			],
+			[
+				"fix",
+				"fixedUpdate	MonoBehaviour.*()"
+			],
+			[
+				"move",
+				"moveSpeed"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Scripts/playerCharacter.cs",
+			"settings":
+			{
+				"buffer_size": 1554,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "testMouse.cs",
+			"settings":
+			{
+				"buffer_size": 279,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Superintendent/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Superintendent/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Superintendent/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Documents/RailgunProject/prototype/Assets/playerCharacter.cs"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n",
+			"select"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Scripts/playerCharacter.cs",
+					"settings":
+					{
+						"buffer_size": 1554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								452,
+								452
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D-master/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "testMouse.cs",
+					"settings":
+					{
+						"buffer_size": 279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D-master/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

@@ -6,26 +6,66 @@ public class playerCharacter : MonoBehaviour
 	//control vars
 	private float horAxis;
 	private float verAxis;
+	private bool firePrimary;
 
+	//move vars
 	public float moveAccel;
 	public float resetVelocity;
 	public float resetVelocityMultiplier;
 
+	//weapon control vars
+	private bool primaryReady;
+	public GameObject primaryWeapon;
+
+	//aiming control vars
 	public float zOffset;
+	private Vector3 mousePosAdj;
+
+	void Awake()
+	{
+		primaryReady = true;
+	}
 	void Update()
 	{
 		inputListener();
 		aimEngine();
+		weaponsEngine();
 	}
+
 	void FixedUpdate()
 	{
 		moveEngine();
 	}
+
 	void aimEngine()
 	{	
-		Vector3 temp = Input.mousePosition;
-		temp.z = zOffset;
- 		transform.LookAt(Camera.main.ScreenToWorldPoint(temp));
+ 		transform.LookAt(Camera.main.ScreenToWorldPoint(mousePosAdj));
+	}
+
+	void weaponsEngine()
+	{
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hit;
+		Debug.DrawRay(ray.origin, ray.direction);
+		if (firePrimary && primaryReady)
+		{
+			GameObject projectile;
+			projectile = Instantiate(primaryWeapon, transform.position, Quaternion.identity) as GameObject;
+			if(Physics.Raycast(ray, out hit, Mathf.Infinity))
+			{
+				projectile.transform.LookAt(hit.point);
+			}
+			else
+			{
+				projectile.transform.rotation = transform.rotation;
+				primaryReady = false;
+			}
+		}
+
+		if(!firePrimary)
+		{
+			primaryReady = true;
+		}
 	}
 	void moveEngine()
 	{
@@ -47,5 +87,8 @@ public class playerCharacter : MonoBehaviour
 	{
 		horAxis = Input.GetAxisRaw("Horizontal");
 		verAxis = Input.GetAxisRaw("Vertical");
+		mousePosAdj = Input.mousePosition;
+		mousePosAdj.z = zOffset;
+		firePrimary = Input.GetButtonDown("Fire1");
 	}
 }

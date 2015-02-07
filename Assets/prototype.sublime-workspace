@@ -1,0 +1,462 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Deb",
+				"Debug.Log	*(message, context)"
+			],
+			[
+				"new",
+				"newEnemy"
+			],
+			[
+				"id",
+				"identity	Quaternion.*"
+			],
+			[
+				"pattern",
+				"patternPositions"
+			],
+			[
+				"parent",
+				"parentCaravan"
+			],
+			[
+				"direc",
+				"direction	CapsuleCollider.*"
+			],
+			[
+				"Ray",
+				"RaycastHit	[class]"
+			],
+			[
+				"Vecto",
+				"Vector3	[class]"
+			],
+			[
+				"primary",
+				"primaryReady"
+			],
+			[
+				"mousePo",
+				"mousePosAdj"
+			],
+			[
+				"mousePos",
+				"mousePos"
+			],
+			[
+				"Game",
+				"GameObject	[class]"
+			],
+			[
+				"Quan",
+				"Quaternion.identity	[property]"
+			],
+			[
+				"Camera",
+				"Camera.main	[property]"
+			],
+			[
+				"Scree",
+				"Screen.height	[property]"
+			],
+			[
+				"Ve",
+				"Vector3	[class]"
+			],
+			[
+				"resetVel",
+				"resetVelocityMultiplier"
+			],
+			[
+				"Scre",
+				"Screen.height	[property]"
+			],
+			[
+				"Vect",
+				"Vector3	[class]"
+			],
+			[
+				"VEctor",
+				"Vector3	[class]"
+			],
+			[
+				"Camer",
+				"Camera.main	[property]"
+			],
+			[
+				"Screen",
+				"Screen.width	[property]"
+			],
+			[
+				"De",
+				"Debug	[class]"
+			],
+			[
+				"rigi",
+				"rigidbody	[class]"
+			],
+			[
+				"fix",
+				"fixedUpdate	MonoBehaviour.*()"
+			],
+			[
+				"move",
+				"moveSpeed"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Scripts/playerCharacter.cs",
+			"settings":
+			{
+				"buffer_size": 2633,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "waveTrigger.cs",
+			"settings":
+			{
+				"buffer_size": 282,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "basicPattern.cs",
+			"settings":
+			{
+				"buffer_size": 981,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "enemyProperties.cs",
+			"settings":
+			{
+				"buffer_size": 129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "basicFlyer.cs",
+			"settings":
+			{
+				"buffer_size": 300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "patternControl.cs",
+			"settings":
+			{
+				"buffer_size": 222,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 1224.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Documents/RailgunProject/prototype/Assets/projectileProperties.cs",
+		"/D/Documents/RailgunProject/prototype/Assets/caravanTruck.cs",
+		"/D/Documents/RailgunProject/prototype/Assets/targetingRet.cs",
+		"/D/Documents/RailgunProject/prototype/Assets/testMouse.cs",
+		"/D/Documents/planetlord/planetlord_alpha/Assets/Materals/rimLighting.shader",
+		"/D/Documents/planetlord/planetlord_alpha/Assets/Scripts/Equipment/flakCannonController.cs",
+		"/D/Documents/planetlord/planetlord_alpha/Assets/Scripts/Equipment/equipmentProperties.cs",
+		"/D/Documents/RailgunProject/prototype/Assets/enemyTrigger.cs",
+		"/C/Users/Superintendent/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Superintendent/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Superintendent/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Documents/RailgunProject/prototype/Assets/playerCharacter.cs"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"spawnEnemies",
+			"enemy",
+			"horAxis",
+			"zOffset",
+			"mousePos",
+			"\n",
+			"select"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Scripts/playerCharacter.cs",
+					"settings":
+					{
+						"buffer_size": 2633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								403,
+								403
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D-master/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "waveTrigger.cs",
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D-master/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "basicPattern.cs",
+					"settings":
+					{
+						"buffer_size": 981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								959,
+								959
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D-master/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "enemyProperties.cs",
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								126
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D-master/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "basicFlyer.cs",
+					"settings":
+					{
+						"buffer_size": 300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								241,
+								241
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D-master/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "patternControl.cs",
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D-master/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

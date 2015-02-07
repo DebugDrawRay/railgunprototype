@@ -12,13 +12,15 @@ public class playerCharacter : MonoBehaviour
 	public float moveAccel;
 	public float resetVelocity;
 	public float resetVelocityMultiplier;
+	public float ZPosOffset;
 
+	public GameObject parentCaravan;
 	//weapon control vars
 	private bool primaryReady;
 	public GameObject primaryWeapon;
 
 	//aiming control vars
-	public float zOffset;
+	public float zAimOffset;
 	private Vector3 mousePosAdj;
 
 	void Awake()
@@ -69,6 +71,7 @@ public class playerCharacter : MonoBehaviour
 	}
 	void moveEngine()
 	{
+		transform.position = new Vector3(transform.position.x, transform.position.y, parentCaravan.transform.position.z + ZPosOffset);
 		Vector3 targetDir;
 		targetDir = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0)) - transform.position;
 		rigidbody.AddForce(new Vector3(targetDir.x, targetDir.y, 0) * resetVelocity * (resetVelocityMultiplier * Vector3.Distance(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0)), transform.position)));
@@ -88,7 +91,7 @@ public class playerCharacter : MonoBehaviour
 		horAxis = Input.GetAxisRaw("Horizontal");
 		verAxis = Input.GetAxisRaw("Vertical");
 		mousePosAdj = Input.mousePosition;
-		mousePosAdj.z = zOffset;
+		mousePosAdj.z = zAimOffset;
 		firePrimary = Input.GetButtonDown("Fire1");
 	}
 }

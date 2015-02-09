@@ -7,14 +7,22 @@ public class playerCharacter : MonoBehaviour
 	private float horAxis;
 	private float verAxis;
 	private bool firePrimary;
+	private bool positionLeft;
+	private bool positionRight;
 
 	//move vars
+	public float forwardAccel;
 	public float moveAccel;
 	public float resetVelocity;
 	public float resetVelocityMultiplier;
-	public float ZPosOffset;
+	public float anchorPosOffset;
+	public Vector3[] positioningArray;
+	public int currentPosition;
 
-	public GameObject parentCaravan;
+	private bool setPositionLeft;
+	private bool setPositionRight;
+
+
 	//weapon control vars
 	private bool primaryReady;
 	public GameObject primaryWeapon;
@@ -25,7 +33,12 @@ public class playerCharacter : MonoBehaviour
 
 	void Awake()
 	{
+		//initialization
 		primaryReady = true;
+		setPositionLeft = true;
+		setPositionRight = true;
+
+		positionControl(0);
 	}
 	void Update()
 	{
@@ -69,20 +82,80 @@ public class playerCharacter : MonoBehaviour
 			primaryReady = true;
 		}
 	}
+
 	void moveEngine()
 	{
-		transform.position = new Vector3(transform.position.x, transform.position.y, parentCaravan.transform.position.z + ZPosOffset);
-		Vector3 targetDir;
-		targetDir = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0)) - transform.position;
-		rigidbody.AddForce(new Vector3(targetDir.x, targetDir.y, 0) * resetVelocity * (resetVelocityMultiplier * Vector3.Distance(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0)), transform.position)));
-		//transform.Translate(new Vector3(horAxis * moveAccel * Time.deltaTime, verAxis * moveAccel * Time.deltaTime, 0));
+		//player movement
+		//rigidbody.velocity = forwardVelocity(currentPosition);
+		
 		if(Camera.main.WorldToScreenPoint(transform.position).x <= Screen.width && Camera.main.WorldToScreenPoint(transform.position).x >= 0)
 		{
-			rigidbody.AddForce(new Vector3(horAxis * moveAccel, 0, 0));
+			rigidbody.AddForce(horAxis * Camera.main.transform.right * moveAccel);
 		}
 		if(Camera.main.WorldToScreenPoint(transform.position).y <= Screen.height && Camera.main.WorldToScreenPoint(transform.position).y >= 0)
 		{
 			rigidbody.AddForce(new Vector3(0, verAxis * moveAccel, 0));
+		}
+
+		if(positionLeft && setPositionLeft)
+		{
+			positionControl(-1);
+			setPositionLeft = false;
+		}
+		if(positionRight && setPositionRight)
+		{
+			positionControl(1);
+			setPositionRight = false;
+		}
+		if(!positionLeft)
+		{
+			setPositionLeft = true;
+		}
+		if(!positionRight)
+		{
+			setPositionRight = true;
+		}
+	}
+
+	void positionControl(int moveVal)
+	{
+		Debug.Log("position");
+		currentPosition += moveVal;
+		Camera.main.transform.eulerAngles += new Vector3(0, 90 * moveVal, 0);
+		if (currentPosition < 0)
+		{
+			currentPosition = positioningArray.Length - 1;
+		}
+
+		if (currentPosition > positioningArray.Length - 1)
+		{
+			currentPosition = 0;
+		}
+		transform.position = Camera.main.transform.position + positioningArray[currentPosition];
+		
+	}
+
+	Vector3 forwardVelocity(int pos)
+	{
+		if (pos == 0)
+		{
+			return new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, forwardAccel);
+		}
+		else if (pos == 1)
+		{
+			return new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, forwardAccel);
+		}
+		else if (pos == 2)
+		{
+			return new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, forwardAccel);		
+		}
+		else if (pos == 3)
+		{
+			return new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, forwardAccel);
+		}
+		else
+		{
+			return Vector3.zero;
 		}
 	}
 
@@ -93,5 +166,7 @@ public class playerCharacter : MonoBehaviour
 		mousePosAdj = Input.mousePosition;
 		mousePosAdj.z = zAimOffset;
 		firePrimary = Input.GetButtonDown("Fire1");
+		positionLeft = Input.GetButtonDown("SwitchPositionLeft");
+		positionRight = Input.GetButtonDown("SwitchPositionRight");
 	}
 }

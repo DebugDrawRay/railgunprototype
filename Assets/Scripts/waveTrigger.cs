@@ -10,5 +10,6 @@ public class waveTrigger : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 		Instantiate (waveToSpawn, transform.position + spawnOffset, Quaternion.identity);
+		Destroy(this.gameObject);
 	}
 }
